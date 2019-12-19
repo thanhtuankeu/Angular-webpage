@@ -94,6 +94,14 @@
             ],
             "exclude": []
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist",
+            "netlifyToken": "1d806cbdf868b3a131d8008ff2046b0e082c1b47b5c29edc4bd89355e6456cdb",
+            "siteId": "9a19f5e4 - a859 - 4401 - 94e6 - e2fbafd78c65"
+          }
         }
       }
     },
