@@ -22,4 +22,7 @@ describe('NotificationComponent', () => {
   it('should be created', () => {
     expect(component).toBeTruthy();
   });
+  it('should be tested', () => {
+    expect(5).toBe(5);
+  });
 });
