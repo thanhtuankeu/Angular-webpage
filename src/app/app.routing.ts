@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: 'signup', component: SignupComponent },
   { path: 'landing', component: LandingComponent },
   { path: 'nucleoicons', component: NucleoiconsComponent },
-  { path: 'santa', component: SantaClausComponent }
+  { path: 'santa', loadChildren: './examples/santa-claus/santa-claus.module#SantaModule' }
 ];
 
 @NgModule({

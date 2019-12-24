@@ -20,10 +20,6 @@ import { CountDirective } from './santa-claus/count.directive';
         LandingComponent,
         SignupComponent,
         ProfileComponent,
-        SantaClausComponent,
-        CountDirective,
-        CountDownTill 
-    ],
-    entryComponents: [CountDownTill]
+    ]
 })
 export class ExamplesModule { }
