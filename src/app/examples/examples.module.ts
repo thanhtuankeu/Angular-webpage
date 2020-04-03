@@ -6,9 +6,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LandingComponent } from './landing/landing.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SignupComponent } from './signup/signup.component';
-import { SantaClausComponent } from './santa-claus/santa-claus.component';
-import { CountDownTill } from './santa-claus/count-down.component';
-import { CountDirective } from './santa-claus/count.directive';
 
 @NgModule({
     imports: [

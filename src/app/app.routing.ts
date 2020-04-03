@@ -8,7 +8,6 @@ import { ProfileComponent } from './examples/profile/profile.component';
 import { SignupComponent } from './examples/signup/signup.component';
 import { LandingComponent } from './examples/landing/landing.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
-import { SantaClausComponent } from './examples/santa-claus/santa-claus.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'user-profile', pathMatch: 'full' },
@@ -17,7 +16,8 @@ const routes: Routes = [
   { path: 'signup', component: SignupComponent },
   { path: 'landing', component: LandingComponent },
   { path: 'nucleoicons', component: NucleoiconsComponent },
-  { path: 'santa', loadChildren: './examples/santa-claus/santa-claus.module#SantaModule' }
+  { path: 'santa', loadChildren: './examples/santa-claus/santa-claus.module#SantaModule' },
+  { path: 'yui', loadChildren: './examples/yui/yui.module#YuiModule' }
 ];
 
 @NgModule({
