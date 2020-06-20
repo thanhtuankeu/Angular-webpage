@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
 declare const particlesJS:any;
 @Component({
   selector: 'app-yui',
@@ -8,10 +9,21 @@ declare const particlesJS:any;
 export class YuiComponent implements OnInit {
 
   constructor() { }
-
+  mySearchForm : any;
   ngOnInit() {
     this.callPartical();
+    this.initForm();
   }
+  initForm(){
+      this.mySearchForm = new FormGroup({
+        inputField: new FormControl()
+    });
+  }
+
+  onSubmit(){
+      console.log(this.mySearchForm.get("inputField").value);
+  }
+
   callPartical(){
 
   particlesJS('particles-js', {
